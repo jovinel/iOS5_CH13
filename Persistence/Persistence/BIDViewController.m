@@ -7,8 +7,10 @@
 //
 
 #import "BIDViewController.h"
+#import "BIDFourLines.h"
 
-#define kFilename       @"data.plist"
+#define kFilename       @"archive"
+#define kDataKey        @"Data"
 
 @implementation BIDViewController
 @synthesize field1;
@@ -36,11 +38,15 @@
 	// Do any additional setup after loading the view, typically from a nib.
     NSString *filePath = [self dataFilePath];
     if ([[NSFileManager defaultManager] fileExistsAtPath:filePath]) {
-        NSArray *array = [[NSArray alloc] initWithContentsOfFile:filePath];
-        field1.text = [array objectAtIndex:0];
-        field2.text = [array objectAtIndex:1];
-        field3.text = [array objectAtIndex:2];
-        field4.text = [array objectAtIndex:3];
+        NSData *data = [[NSMutableData alloc] initWithContentsOfFile:[self dataFilePath]];
+        NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+        BIDFourLines *fourLines = [unarchiver decodeObjectForKey:kDataKey];
+        [unarchiver finishDecoding];
+        
+        field1.text = fourLines.field1;
+        field2.text = fourLines.field2;
+        field3.text = fourLines.field3;
+        field4.text = fourLines.field4;
     }
     UIApplication *app = [UIApplication sharedApplication];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationWillResignActive:) name:UIApplicationWillResignActiveNotification object:app];
@@ -84,12 +90,17 @@
 }
 
 - (void)applicationWillResignActive:(NSNotification *)notification {
-    NSMutableArray *array = [[NSMutableArray alloc] init];
-    [array addObject:field1.text];
-    [array addObject:field2.text];
-    [array addObject:field3.text];
-    [array addObject:field4.text];
-    [array writeToFile:[self dataFilePath] atomically:YES];
+    BIDFourLines *fourLines = [[BIDFourLines alloc] init];
+    fourLines.field1 = field1.text;
+    fourLines.field2 = field2.text;
+    fourLines.field3 = field3.text;
+    fourLines.field4 = field4.text;
+    
+    NSMutableData *data = [[NSMutableData alloc] init];
+    NSKeyedArchiver *archiver = [[NSKeyedArchiver alloc] initForWritingWithMutableData:data];
+    [archiver encodeObject:fourLines forKey:kDataKey];
+    [archiver finishEncoding];
+    [data writeToFile:[self dataFilePath] atomically:YES];
 }
 
 @end

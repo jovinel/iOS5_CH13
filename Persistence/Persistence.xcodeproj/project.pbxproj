@@ -15,6 +15,7 @@
 		00B68B0218505A2800C3D6EF /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B0118505A2800C3D6EF /* BIDAppDelegate.m */; };
 		00B68B0518505A2800C3D6EF /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B0418505A2800C3D6EF /* BIDViewController.m */; };
 		00B68B0818505A2800C3D6EF /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00B68B0618505A2800C3D6EF /* BIDViewController.xib */; };
+		00B68B101850676200C3D6EF /* BIDFourLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B0F1850676200C3D6EF /* BIDFourLines.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		00B68B0318505A2800C3D6EF /* BIDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
 		00B68B0418505A2800C3D6EF /* BIDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
 		00B68B0718505A2800C3D6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/BIDViewController.xib; sourceTree = "<group>"; };
+		00B68B0E1850676200C3D6EF /* BIDFourLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDFourLines.h; sourceTree = "<group>"; };
+		00B68B0F1850676200C3D6EF /* BIDFourLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDFourLines.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 				00B68B0418505A2800C3D6EF /* BIDViewController.m */,
 				00B68B0618505A2800C3D6EF /* BIDViewController.xib */,
 				00B68AF818505A2800C3D6EF /* Supporting Files */,
+				00B68B0E1850676200C3D6EF /* BIDFourLines.h */,
+				00B68B0F1850676200C3D6EF /* BIDFourLines.m */,
 			);
 			path = Persistence;
 			sourceTree = "<group>";
@@ -163,6 +168,7 @@
 				00B68AFE18505A2800C3D6EF /* main.m in Sources */,
 				00B68B0218505A2800C3D6EF /* BIDAppDelegate.m in Sources */,
 				00B68B0518505A2800C3D6EF /* BIDViewController.m in Sources */,
+				00B68B101850676200C3D6EF /* BIDFourLines.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
