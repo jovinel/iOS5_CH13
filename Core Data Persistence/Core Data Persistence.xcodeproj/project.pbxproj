@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00B68B2D185083FE00C3D6EF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B68B2C185083FE00C3D6EF /* UIKit.framework */; };
+		00B68B2F185083FE00C3D6EF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B68B2E185083FE00C3D6EF /* Foundation.framework */; };
+		00B68B31185083FE00C3D6EF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B68B30185083FE00C3D6EF /* CoreGraphics.framework */; };
+		00B68B33185083FE00C3D6EF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00B68B32185083FE00C3D6EF /* CoreData.framework */; };
+		00B68B39185083FE00C3D6EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00B68B37185083FE00C3D6EF /* InfoPlist.strings */; };
+		00B68B3B185083FE00C3D6EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B3A185083FE00C3D6EF /* main.m */; };
+		00B68B3F185083FE00C3D6EF /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B3E185083FE00C3D6EF /* BIDAppDelegate.m */; };
+		00B68B42185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B40185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00B68B28185083FE00C3D6EF /* Core Data Persistence.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data Persistence.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		00B68B2C185083FE00C3D6EF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00B68B2E185083FE00C3D6EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00B68B30185083FE00C3D6EF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00B68B32185083FE00C3D6EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		00B68B36185083FE00C3D6EF /* Core Data Persistence-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Core Data Persistence-Info.plist"; sourceTree = "<group>"; };
+		00B68B38185083FE00C3D6EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00B68B3A185083FE00C3D6EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00B68B3C185083FE00C3D6EF /* Core Data Persistence-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Core Data Persistence-Prefix.pch"; sourceTree = "<group>"; };
+		00B68B3D185083FE00C3D6EF /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
+		00B68B3E185083FE00C3D6EF /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
+		00B68B41185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data_Persistence.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00B68B25185083FE00C3D6EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B68B2D185083FE00C3D6EF /* UIKit.framework in Frameworks */,
+				00B68B2F185083FE00C3D6EF /* Foundation.framework in Frameworks */,
+				00B68B31185083FE00C3D6EF /* CoreGraphics.framework in Frameworks */,
+				00B68B33185083FE00C3D6EF /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00B68B1D185083FE00C3D6EF = {
+			isa = PBXGroup;
+			children = (
+				00B68B34185083FE00C3D6EF /* Core Data Persistence */,
+				00B68B2B185083FE00C3D6EF /* Frameworks */,
+				00B68B29185083FE00C3D6EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00B68B29185083FE00C3D6EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00B68B28185083FE00C3D6EF /* Core Data Persistence.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00B68B2B185083FE00C3D6EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00B68B2C185083FE00C3D6EF /* UIKit.framework */,
+				00B68B2E185083FE00C3D6EF /* Foundation.framework */,
+				00B68B30185083FE00C3D6EF /* CoreGraphics.framework */,
+				00B68B32185083FE00C3D6EF /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00B68B34185083FE00C3D6EF /* Core Data Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				00B68B3D185083FE00C3D6EF /* BIDAppDelegate.h */,
+				00B68B3E185083FE00C3D6EF /* BIDAppDelegate.m */,
+				00B68B40185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld */,
+				00B68B35185083FE00C3D6EF /* Supporting Files */,
+			);
+			path = "Core Data Persistence";
+			sourceTree = "<group>";
+		};
+		00B68B35185083FE00C3D6EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00B68B36185083FE00C3D6EF /* Core Data Persistence-Info.plist */,
+				00B68B37185083FE00C3D6EF /* InfoPlist.strings */,
+				00B68B3A185083FE00C3D6EF /* main.m */,
+				00B68B3C185083FE00C3D6EF /* Core Data Persistence-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00B68B27185083FE00C3D6EF /* Core Data Persistence */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00B68B45185083FF00C3D6EF /* Build configuration list for PBXNativeTarget "Core Data Persistence" */;
+			buildPhases = (
+				00B68B24185083FE00C3D6EF /* Sources */,
+				00B68B25185083FE00C3D6EF /* Frameworks */,
+				00B68B26185083FE00C3D6EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Core Data Persistence";
+			productName = "Core Data Persistence";
+			productReference = 00B68B28185083FE00C3D6EF /* Core Data Persistence.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00B68B1F185083FE00C3D6EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 00B68B22185083FE00C3D6EF /* Build configuration list for PBXProject "Core Data Persistence" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00B68B1D185083FE00C3D6EF;
+			productRefGroup = 00B68B29185083FE00C3D6EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00B68B27185083FE00C3D6EF /* Core Data Persistence */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00B68B26185083FE00C3D6EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B68B39185083FE00C3D6EF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00B68B24185083FE00C3D6EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00B68B3B185083FE00C3D6EF /* main.m in Sources */,
+				00B68B3F185083FE00C3D6EF /* BIDAppDelegate.m in Sources */,
+				00B68B42185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00B68B37185083FE00C3D6EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00B68B38185083FE00C3D6EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00B68B43185083FF00C3D6EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00B68B44185083FF00C3D6EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00B68B46185083FF00C3D6EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core Data Persistence/Core Data Persistence-Prefix.pch";
+				INFOPLIST_FILE = "Core Data Persistence/Core Data Persistence-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00B68B47185083FF00C3D6EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Core Data Persistence/Core Data Persistence-Prefix.pch";
+				INFOPLIST_FILE = "Core Data Persistence/Core Data Persistence-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00B68B22185083FE00C3D6EF /* Build configuration list for PBXProject "Core Data Persistence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B68B43185083FF00C3D6EF /* Debug */,
+				00B68B44185083FF00C3D6EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00B68B45185083FF00C3D6EF /* Build configuration list for PBXNativeTarget "Core Data Persistence" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00B68B46185083FF00C3D6EF /* Debug */,
+				00B68B47185083FF00C3D6EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		00B68B40185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				00B68B41185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodel */,
+			);
+			currentVersion = 00B68B41185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodel */;
+			path = Core_Data_Persistence.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 00B68B1F185083FE00C3D6EF /* Project object */;
+}
