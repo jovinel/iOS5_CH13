@@ -16,6 +16,8 @@
 		00B68B3F185083FE00C3D6EF /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B3E185083FE00C3D6EF /* BIDAppDelegate.m */; };
 		00B68B42185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 00B68B40185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld */; };
 		4741969B1851A31E00A91ED6 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4741969A1851A31E00A91ED6 /* Default-568h@2x.png */; };
+		474196A41851B01400A91ED6 /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474196A21851B01400A91ED6 /* BIDViewController.m */; };
+		474196A51851B01400A91ED6 /* BIDViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 474196A31851B01400A91ED6 /* BIDViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,9 @@
 		00B68B3E185083FE00C3D6EF /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
 		00B68B41185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Core_Data_Persistence.xcdatamodel; sourceTree = "<group>"; };
 		4741969A1851A31E00A91ED6 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		474196A11851B01400A91ED6 /* BIDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDViewController.h; sourceTree = "<group>"; };
+		474196A21851B01400A91ED6 /* BIDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDViewController.m; sourceTree = "<group>"; };
+		474196A31851B01400A91ED6 /* BIDViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BIDViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +86,9 @@
 		00B68B34185083FE00C3D6EF /* Core Data Persistence */ = {
 			isa = PBXGroup;
 			children = (
+				474196A11851B01400A91ED6 /* BIDViewController.h */,
+				474196A21851B01400A91ED6 /* BIDViewController.m */,
+				474196A31851B01400A91ED6 /* BIDViewController.xib */,
 				00B68B3D185083FE00C3D6EF /* BIDAppDelegate.h */,
 				00B68B3E185083FE00C3D6EF /* BIDAppDelegate.m */,
 				00B68B40185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld */,
@@ -152,6 +160,7 @@
 			files = (
 				00B68B39185083FE00C3D6EF /* InfoPlist.strings in Resources */,
 				4741969B1851A31E00A91ED6 /* Default-568h@2x.png in Resources */,
+				474196A51851B01400A91ED6 /* BIDViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +174,7 @@
 				00B68B3B185083FE00C3D6EF /* main.m in Sources */,
 				00B68B3F185083FE00C3D6EF /* BIDAppDelegate.m in Sources */,
 				00B68B42185083FE00C3D6EF /* Core_Data_Persistence.xcdatamodeld in Sources */,
+				474196A41851B01400A91ED6 /* BIDViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
